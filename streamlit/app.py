@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-df=pd.read_csv('products_new_df.csv')
+df=pd.read_csv('./products_new_df.csv')
 def filter_products(category, skin_type, exclude_ingr):
     filtered_df = df[df["Label"] == category]
     filtered_df = filtered_df[filtered_df[skin_type] == 1]

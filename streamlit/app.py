@@ -80,7 +80,7 @@ with c3:
 def contact():
     st.title("Contact")
     st.write("This is the contact page")
-    st.image("contact-image.jpg")
+    st.image("original-2-1.gif")
 
 # Страница с информацией об аллергенах и ингредиентах
 def allergens():

@@ -17,9 +17,11 @@ with st.sidebar.beta_expander("Learn more about allergens and ingredients"):
 
 with st.sidebar.beta_expander("Contact"):
     st.info('**Data Analyst: [@AlisaK](https://www.linkedin.com/in/alisa-kaliagina/)**', icon="💡")
+    st.info('**GitHub: [@AlisaKaligina](https://github.com/AlisaKaliagina)**', icon="💻")
+    st.info('**Data: [Cosmetics datasets](https://www.kaggle.com/datasets/kingabzpro/cosmetics-datasets)**', icon="🧠")
     
 
-st.sidebar.info("Contact")
+
 
 # Загружаем новые оптимизированные данные
 DATA = ('products_new_df.csv')

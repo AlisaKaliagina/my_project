@@ -1,8 +1,37 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
 
-df=pd.read_csv('./products_new_df.csv')
+# Основная страница
+def main():
+    st.title("AllergenNix")
+    st.write("""Your beautytool """)
+    st.image('skin-jumbo-v2.gif')
+
+    st.sidebar.title("Find your product")
+    st.sidebar.info(
+        """
+        Allergens and ingredients.
+        """
+    )
+
+    # Добавляем кнопки для перехода на другие страницы
+    if st.sidebar.button("Learn more about allergens and ingredients"):
+        st.experimental_set_query_params(page="allergens")
+    if st.sidebar.button("Contact"):
+        st.experimental_set_query_params(page="contact")
+
+    # Загружаем новые оптимизированные данные
+DATA = ('products_new_df.csv')
+@st.cache # для оптимизации работы приложения
+
+# Создадим функцию для загрузки данных
+def load_data():
+    df = pd.read_csv(DATA)
+    return df   
+
+# Применим функцию 
+df = load_data()
+
 def filter_products(category, skin_type, exclude_ingr):
     filtered_df = df[df["Label"] == category]
     filtered_df = filtered_df[filtered_df[skin_type] == 1]
@@ -21,78 +50,48 @@ def filter_products(category, skin_type, exclude_ingr):
 
     return result
 
-def main():
-    cat = ['Moisturizer', 'Cleanser', 'Treatment', 'Face Mask', 'Eye Cream', 'Sun protect']
-    type_skin = ['Dry', 'Oily', 'Normal', 'Combination', 'Sensitive']
-    category = input('What kind of product are u searchig for? (Moisturizer, Cleanser, Treatment, Eye cream, Face Mask, Sun protect)').title().strip()
+categories = ['Moisturizer', 'Cleanser', 'Treatment', 'Face Mask', 'Eye Cream', 'Sun protect']
+skin_types = ['Dry', 'Oily', 'Normal', 'Combination', 'Sensitive']
 
-    while category not in cat:
-        print('Please choose category of product: Moisturizer, Cleanser, Treatment, Eye cream, Face Mask, Sun protect')
-        category = input().title().strip()
-        break
+selected_category = st.selectbox('What kind of product are you searching for?', categories)
+selected_skin_type = st.selectbox('What is your skin type?', skin_types)
+exclude_ingr = st.text_input('What ingredients (allergens) do you want to exclude from the product? If you wanted to enter multiple ingredients, please enter them separated by commas')
 
-    skin_type = input('What is your skin type? (Dry, Oily, Normal, Combination, Sensitive)').title().strip()
-    
-    while skin_type not in type_skin:
-        print('Please choose your type of skin')
-        skin_type = input().title().strip()
-        break
-
-    exclude_ingr = input('What ingredients (allergens) do you want to exclude from the product? If you wanted to enter multiple ingredients, please enter them separated by commas').title().strip()
-    exclude_ingr = [a.strip() for a in exclude_ingr.split(",")]
-
-    filtered_products = filter_products(category, skin_type, exclude_ingr)
-    
-    if filtered_products.empty:
-        print('Sorry, no products match your criteria. Please try again.')
-        filtered_products = main()
-
-    return filtered_products
-
-main()
-
-# Заголовок и вступление
-st.title("Консультант по уходу за кожей")
-st.write("Добро пожаловать! Этот инструмент поможет вам найти подходящие продукты для ухода за кожей на основе ваших предпочтений и типа кожи.")
-
-# Вместо использования ввода с клавиатуры используйте виджеты Streamlit для получения пользовательских данных
-category = st.selectbox("Выберите категорию продукта", ['Moisturizer', 'Cleanser', 'Treatment', 'Face Mask', 'Eye Cream', 'Sun protect'])
-skin_type = st.selectbox("Выберите тип кожи", ['Dry', 'Oily', 'Normal', 'Combination', 'Sensitive'])
-exclude_ingr = st.text_input("Введите ингредиенты (аллергены), которые вы хотите исключить из продукта. Если вы хотите ввести несколько ингредиентов, разделите их запятыми")
-
-# Кнопка для запуска поиска продуктов
-if st.button("Найти продукты"):
+if st.button('Find Products'):
     exclude_ingr_list = [a.strip() for a in exclude_ingr.split(",")]
-    filtered_products = filter_products(category, skin_type, exclude_ingr_list)
+    filtered_products = filter_products(selected_category, selected_skin_type, exclude_ingr_list)
 
     if filtered_products.empty:
-        st.write("Извините, подходящих продуктов не найдено. Попробуйте изменить критерии поиска.")
+        st.write('Sorry, no products match your criteria. Please try again.')
     else:
-        st.write(filtered_products)
+        st.write(filtered_products.to_html(index=False, border=0, justify="center"), unsafe_allow_html=True)
 
 
-st.title("AllergenNix")
-st.write("""Your beautytool """)
-st.image('skin-jumbo-v2.gif')
 
-st.sidebar.title("Info")
-st.sidebar.info(
-    """
-    This app is Open Source dashboard.
-    """
-)
-st.sidebar.info("#Тест "
-                "Тест")
-# Загружаем новые оптимизированные данные
-DATA = ('products_new_df.csv')
-@st.cache # для оптимизации работы приложения
+c1, c2, c3 = st.columns(3)
+with c1:
+    st.info('**Data Analyst: [@AlisaK](https://www.linkedin.com/in/alisa-kaliagina/)**', icon="💡")
+with c2:
+    st.info('**GitHub: [@AlisaKaligina](https://github.com/AlisaKaliagina)**', icon="💻")
+with c3:
+    st.info('**Data: [Cosmetics datasets](https://www.kaggle.com/datasets/kingabzpro/cosmetics-datasets)**', icon="🧠")
 
-# Создадим функцию для загрузки данных
-def load_data():
-    df = pd.read_csv(DATA)
-    return df   
+# Страница контактов
+def contact():
+    st.title("Contact")
+    st.write("This is the contact page")
+    st.image("contact-image.jpg")
 
-# Применим функцию 
-df = load_data()
-st.write (df)
+# Страница с информацией об аллергенах и ингредиентах
+def allergens():
+    st.title("Allergens and Ingredients")
+    st.write("This is the allergens and ingredients page")
+    st.image("allergens-image.jpg")
 
+# Получаем значение параметра page из URL-адреса и отображаем соответствующую страницу
+if "page" not in st.experimental_get_query_params():
+    main()
+elif st.experimental_get_query_params()["page"] == "contact":
+    contact()
+elif st.experimental_get_query_params()["page"] == "allergens":
+    allergens()

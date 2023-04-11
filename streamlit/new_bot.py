@@ -75,3 +75,6 @@ if st.button('Find Products'):
     else:
         st.write(filtered_products.to_html(index=False, border=0, justify="center"), unsafe_allow_html=True)
 
+st.markdown('<a name="contact-section"></a>', unsafe_allow_html=True)
+st.header('Contact')
+st.write('Please feel free to reach out to us at steiger2212@gmail.com.')

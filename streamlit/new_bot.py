@@ -1,6 +1,17 @@
 import streamlit as st
 import pandas as pd
 
+st.markdown(
+    """
+<style>
+body {
+    background-color: #98FB98;
+}
+</style>
+""",
+    unsafe_allow_html=True,
+)
+
 st.title("AllergenNix")
 st.write("""Your beautytool """)
 st.image('skin-jumbo-v2.gif')

@@ -5,14 +5,14 @@ st.title("AllergenNix")
 st.write("""Your beautytool """)
 st.image('skin-jumbo-v2.gif')
 
-st.sidebar.title("Info")
+st.sidebar.title("Find your product")
 st.sidebar.info(
     """
-    This app is Open Source dashboard.
+    Allergens and ingredients.
     """
 )
-st.sidebar.info("#Тест "
-                "Тест")
+st.sidebar.info("Contact")
+
 # Загружаем новые оптимизированные данные
 DATA = ('products_new_df.csv')
 @st.cache # для оптимизации работы приложения

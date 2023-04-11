@@ -15,7 +15,11 @@ with st.sidebar.beta_expander("Learn more about allergens and ingredients"):
     st.write("Of course any part of the body can show an allergic reaction to cosmetic products. But, usually the more sensitive areas are those where the skin is thinner and more sensitive, such as the face, neck, décolletage and inner arms.")
     st.image("31SKIN-superJumbo.gif")
 
-st.sidebar.info("Contact with me")
+with st.sidebar.beta_expander("Contact"):
+    st.info('**Data Analyst: [@AlisaK](https://www.linkedin.com/in/alisa-kaliagina/)**', icon="💡")
+    
+
+st.sidebar.info("Contact")
 
 # Загружаем новые оптимизированные данные
 DATA = ('products_new_df.csv')

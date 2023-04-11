@@ -5,7 +5,7 @@ st.title("AllergenNix")
 st.write("""Your beautytool """)
 st.image('skin-jumbo-v2.gif')
 
-st.sidebar.title("Find your product")
+st.sidebar.title('Find your product', icon='🦋')
 st.sidebar.info(
     """
     Allergens and ingredients.

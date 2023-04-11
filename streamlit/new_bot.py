@@ -3,6 +3,7 @@ import pandas as pd
 
 st.title("AllergenNix")
 st.write("""Your beautytool """)
+st.image('skin-jumbo-v2.gif')
 
 st.sidebar.title("Info")
 st.sidebar.info(
@@ -24,3 +25,4 @@ def load_data():
 # Применим функцию 
 df = load_data()
 st.write (df)
+

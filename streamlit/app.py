@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
 
 df=pd.read_csv('products_new_df.csv')
 def filter_products(category, skin_type, exclude_ingr):
@@ -21,21 +22,51 @@ def filter_products(category, skin_type, exclude_ingr):
     return result
 
 def main():
-    st.title("Product Recommendation App")
-    
     cat = ['Moisturizer', 'Cleanser', 'Treatment', 'Face Mask', 'Eye Cream', 'Sun protect']
     type_skin = ['Dry', 'Oily', 'Normal', 'Combination', 'Sensitive']
+    category = input('What kind of product are u searchig for? (Moisturizer, Cleanser, Treatment, Eye cream, Face Mask, Sun protect)').title().strip()
 
-    category = st.selectbox("What kind of product are you searching for?", cat)
-    skin_type = st.selectbox("What is your skin type?", type_skin)
-    exclude_ingr = st.text_input("What ingredients (allergens) do you want to exclude from the product? If you wanted to enter multiple ingredients, please enter them separated by commas")
+    while category not in cat:
+        print('Please choose category of product: Moisturizer, Cleanser, Treatment, Eye cream, Face Mask, Sun protect')
+        category = input().title().strip()
+        break
 
-    if st.button("Find Products"):
-        exclude_ingr = [a.strip() for a in exclude_ingr.split(",")]
-        filtered_products = filter_products(category, skin_type, exclude_ingr)
+    skin_type = input('What is your skin type? (Dry, Oily, Normal, Combination, Sensitive)').title().strip()
+    
+    while skin_type not in type_skin:
+        print('Please choose your type of skin')
+        skin_type = input().title().strip()
+        break
 
-        if filtered_products.empty:
-            st.write("Sorry, no products match your criteria. Please try again.")
-        else:
-            st.write(filtered_products)
+    exclude_ingr = input('What ingredients (allergens) do you want to exclude from the product? If you wanted to enter multiple ingredients, please enter them separated by commas').title().strip()
+    exclude_ingr = [a.strip() for a in exclude_ingr.split(",")]
+
+    filtered_products = filter_products(category, skin_type, exclude_ingr)
+    
+    if filtered_products.empty:
+        print('Sorry, no products match your criteria. Please try again.')
+        filtered_products = main()
+
+    return filtered_products
+
+main()
+
+# Заголовок и вступление
+st.title("Консультант по уходу за кожей")
+st.write("Добро пожаловать! Этот инструмент поможет вам найти подходящие продукты для ухода за кожей на основе ваших предпочтений и типа кожи.")
+
+# Вместо использования ввода с клавиатуры используйте виджеты Streamlit для получения пользовательских данных
+category = st.selectbox("Выберите категорию продукта", ['Moisturizer', 'Cleanser', 'Treatment', 'Face Mask', 'Eye Cream', 'Sun protect'])
+skin_type = st.selectbox("Выберите тип кожи", ['Dry', 'Oily', 'Normal', 'Combination', 'Sensitive'])
+exclude_ingr = st.text_input("Введите ингредиенты (аллергены), которые вы хотите исключить из продукта. Если вы хотите ввести несколько ингредиентов, разделите их запятыми")
+
+# Кнопка для запуска поиска продуктов
+if st.button("Найти продукты"):
+    exclude_ingr_list = [a.strip() for a in exclude_ingr.split(",")]
+    filtered_products = filter_products(category, skin_type, exclude_ingr_list)
+
+    if filtered_products.empty:
+        st.write("Извините, подходящих продуктов не найдено. Попробуйте изменить критерии поиска.")
+    else:
+        st.write(filtered_products)
 

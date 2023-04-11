@@ -68,5 +68,5 @@ if st.button('Find Products'):
     if filtered_products.empty:
         st.write('Sorry, no products match your criteria. Please try again.')
     else:
-        st.write(filtered_products)
+        st.write(filtered_products.to_html(index=False, border=0, justify="center"), unsafe_allow_html=True)
 

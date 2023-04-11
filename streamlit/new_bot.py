@@ -63,6 +63,8 @@ if st.button('Find Products'):
     else:
         st.write(filtered_products.to_html(index=False, border=0, justify="center"), unsafe_allow_html=True)
 
+
+
 c1, c2, c3 = st.columns(3)
 with c1:
     st.info('**Data Analyst: [@AlisaK](https://www.linkedin.com/in/alisa-kaliagina/)**', icon="💡")

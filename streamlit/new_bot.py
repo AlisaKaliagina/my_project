@@ -1,18 +1,6 @@
 import streamlit as st
 import pandas as pd
 
-
-st.markdown(
-    """
-<style>
-.reportview-container {
-    background-color: #FFC0CB;
-}
-</style>
-""",
-    unsafe_allow_html=True,
-)
-
 st.title("AllergenNix")
 st.write("""Your beautytool """)
 st.image('skin-jumbo-v2.gif')
@@ -28,7 +16,7 @@ with st.sidebar.beta_expander("Learn more about allergens and ingredients"):
     st.image("31SKIN-superJumbo.gif")
 
 st.sidebar.info("Contact")
-st.sidebar.markdown('[Contact](#contact-section)')
+
 # Загружаем новые оптимизированные данные
 DATA = ('products_new_df.csv')
 @st.cache # для оптимизации работы приложения
@@ -75,6 +63,3 @@ if st.button('Find Products'):
     else:
         st.write(filtered_products.to_html(index=False, border=0, justify="center"), unsafe_allow_html=True)
 
-st.markdown('<a name="contact-section"></a>', unsafe_allow_html=True)
-st.header('Contact')
-st.write('Please feel free to reach out to us at steiger2212@gmail.com.')

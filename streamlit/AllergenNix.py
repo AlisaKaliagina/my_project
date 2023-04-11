@@ -8,7 +8,7 @@ st.image('skin-jumbo-v2.gif')
 st.sidebar.title("How to use?")
 
 with st.sidebar.beta_expander("How can I determine my skin type?"):
-    st.write("Of course any part of the body can show an allergic reaction to cosmetic products. But, usually the more sensitive areas are those where the skin is thinner and more sensitive, such as the face, neck, décolletage and inner arms.")
+    st.write("[**Here**](https://www.luminskin.com/blog/556068306980/how-to-determine-your-skin-type?utm_source=google&utm_medium=cpc&utm_campaign=16950478023&utm_term=&utm_content=pmax&gclid=CjwKCAjwitShBhA6EiwAq3RqA-LiB1Bt9Hbz6BfG8X8_D1WZ_u8JFopotWKduwAdW_aKtLbtyZN1hhoC85MQAvD_BwE) you can find some information")
     st.image("31SKIN-superJumbo.gif")
 
 with st.sidebar.beta_expander("Contact"):

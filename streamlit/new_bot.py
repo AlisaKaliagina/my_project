@@ -5,8 +5,8 @@ import pandas as pd
 st.markdown(
     """
 <style>
-body {
-    background-color: #F63366;
+.reportview-container {
+    background-color: #FFC0CB;
 }
 </style>
 """,

@@ -28,7 +28,7 @@ with st.sidebar.beta_expander("Learn more about allergens and ingredients"):
     st.image("31SKIN-superJumbo.gif")
 
 st.sidebar.info("Contact")
-
+st.sidebar.markdown('[Contact](#contact-section)')
 # Загружаем новые оптимизированные данные
 DATA = ('products_new_df.csv')
 @st.cache # для оптимизации работы приложения

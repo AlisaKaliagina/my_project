@@ -2,7 +2,15 @@ import streamlit as st
 import pandas as pd
 
 st.title("AllergenNix")
-st.write(""""Free your skin from allergens with AllergenNix - your reliable tool for safe and healthy skin!" """)
+st.markdown("""
+    <style>
+        .red-text {
+            color: red;
+        }
+    </style>
+    <p class="red-text">Free your skin from allergens with AllergenNix - your reliable tool for safe and healthy skin!</p>
+    """, unsafe_allow_html=True)
+
 st.image('skin-jumbo-v2.gif')
 
 st.sidebar.title("How to use?")

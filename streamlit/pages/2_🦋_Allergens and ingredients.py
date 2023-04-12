@@ -50,8 +50,8 @@ with st.sidebar.beta_expander("What symptoms might indicate an allergic reaction
 
 with st.sidebar.beta_expander("Are there hypoallergenic cosmetic products available?"):
     st.write("Hypoallergenic products exist, but they don't guarantee a complete absence of an allergic reaction.")
-    st.image("patch.webp")
+    st.image("cosm.jpeg")
 
 with st.sidebar.beta_expander("Can a product labeled as 'natural' or 'organic' cause allergic reactions?"):
     st.write("Even natural and organic products can cause allergies, as some natural ingredients are allergens.")
-    st.image("INCI-2.png")
+    

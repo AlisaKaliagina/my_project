@@ -23,13 +23,11 @@ st.subheader(
     """
 🚨 If you do experience an allergic reaction to a cosmetic product, stop using it immediately and seek medical attention if the symptoms are severe or persistent.🚨
     """
-
-
 )
 
+st.title(           'Allergen Awareness'            )
 
 st.image('allergens-TITOLO.png')
-st.title('Allergen Awareness')
 
 st.write(
     """

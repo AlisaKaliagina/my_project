@@ -5,10 +5,10 @@ st.title("AllergenNix")
 st.markdown("""
     <style>
         .green-text {
-            color: rgb(0, 255, 0);
+            color: rgb(0, 255, 0); /* или использовать #00FF00 */
         }
     </style>
-    <p class="red-text">Free your skin from allergens with AllergenNix - your reliable tool for safe and healthy skin!</p>
+    <p class="green-text">Free your skin from allergens with AllergenNix - your reliable tool for safe and healthy skin!</p>
     """, unsafe_allow_html=True)
 
 st.image('skin-jumbo-v2.gif')

@@ -15,7 +15,7 @@ with st.sidebar.beta_expander("How can I determine my skin type?"):
 
 with st.sidebar.beta_expander("How to enter the ingredients?"):
     st.write("Be sure to use a comma when entering multiple ingredients. You can also refer to the information in the 'Allergens and Ingredients' section to help you choose the right product.")
-    st.image("cosm.jpeg")
+    st.image("commas.jpg")
 
 with st.sidebar.beta_expander("Why are there 3 products in the output?"):
     st.write("We present you the top rated products in every price segment.")

@@ -38,3 +38,20 @@ While not everyone may experience an adverse reaction to these allergens, it's c
 Remember, the presence of these allergens doesn't necessarily mean a product is harmful, but rather that it may cause a reaction in susceptible individuals. Always perform a patch test before using a new product, and consult with a dermatologist if you're unsure or have concerns about specific ingredients.
     """
 )
+st.sidebar.title("FAQ:")
+
+with st.sidebar.beta_expander("What are the most common allergens in cosmetic products?"):
+    st.write("Common allergens: fragrances, preservatives, dyes, nickel, and some plant ingredients.")
+    st.image("type_skin.jpg")
+
+with st.sidebar.beta_expander("What symptoms might indicate an allergic reaction to a cosmetic product?"):
+    st.write("Allergy symptoms to cosmetics: itching, redness, swelling, rash, or skin irritation.")
+    st.image("cosm.jpeg")
+
+with st.sidebar.beta_expander("Are there hypoallergenic cosmetic products available?"):
+    st.write("Hypoallergenic products exist, but they don't guarantee a complete absence of an allergic reaction.")
+    st.image("type_skin.jpg")
+
+with st.sidebar.beta_expander("Can a product labeled as 'natural' or 'organic' cause allergic reactions?"):
+    st.write("Even natural and organic products can cause allergies, as some natural ingredients are allergens.")
+    st.image("cosm.jpeg")

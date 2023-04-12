@@ -58,7 +58,7 @@ skin_types = ['Dry', 'Oily', 'Normal', 'Combination', 'Sensitive']
 
 selected_category = st.selectbox('What kind of product are you searching for?', categories)
 selected_skin_type = st.selectbox('What is your skin type?', skin_types)
-exclude_ingr = st.text_input('What ingredients (allergens) do you want to exclude from the product? ❗ (If you want to enter multiple ingredients, please enter them separated by commas)')
+exclude_ingr = st.text_input('What ingredients (allergens) do you want to exclude from the product?❌❓ (❗If you want to enter multiple ingredients, please enter them separated by commas❗)')
 
 if st.button('Find Products'):
     exclude_ingr_list = [a.strip() for a in exclude_ingr.split(",")]

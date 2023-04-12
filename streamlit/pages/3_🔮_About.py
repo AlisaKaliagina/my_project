@@ -4,7 +4,7 @@ st.title('Analyzing allergens in cosmetics comes with several limitations and ch
 
 st.image('cosm_about.jpeg')
 
-st.subheader('1. Incomplete ingredient lists')
+st.subheader('blue:[1. Incomplete ingredient lists]')
 
 st.write(
     """

@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 st.title("AllergenNix")
-st.write("""Your beautytool """)
+st.write(""""Free your skin from allergens with AllergenNix - your reliable tool for safe and healthy skin!" """)
 st.image('skin-jumbo-v2.gif')
 
 st.sidebar.title("How to use?")

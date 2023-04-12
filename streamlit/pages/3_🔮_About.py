@@ -67,19 +67,3 @@ with st.sidebar.beta_expander("If my product contains one of the 26 allergens, d
     """
     )
     st.image("skin_dang.ipeg")
-
-with st.sidebar.beta_expander("What regulatory requirements exist for allergen labeling in cosmetic products?"):
-    st.write("Regulatory requirements for allergen labeling vary depending on the country.")
-    st.image("cosmetics_labeling.gif")
-
-
-with st.sidebar.beta_expander("Does the price of a cosmetic product depend on the amount of allergens it contains?"):
-    
-    st.write(
-     """
-The price of a cosmetic product is not necessarily dependent on the number of allergens it contains.
-
-Other factors, such as the quality of ingredients, brand reputation, and packaging, can also affect the price of a cosmetic product. 
-
-However, some companies may use higher-quality, hypoallergenic ingredients and charge a premium for their products as a result. Ultimately, it's important to carefully read the ingredient labels and choose products that work for your skin type and personal preferences, regardless of the price."""
-)

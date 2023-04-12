@@ -51,19 +51,3 @@ st.subheader(
 Despite these limitations, being aware of the most common allergens and carefully reading ingredient labels can help individuals with sensitive skin or a history of allergies make informed decisions when choosing cosmetic products.
     """
 )
-
-st.sidebar.title("What you should know ✅:")
-    
-with st.sidebar.beta_expander("Can a fragrance-free product contain allergens?"):
-    st.write("Fragrance-free means the absence of artificial fragrances, but the product may contain allergens.")
-   
-
-with st.sidebar.beta_expander("If my product contains one of the 26 allergens, does this mean that I should refuse the product?"):
-    st.write("""
-    If your cosmetic product contains one of the 26 allergens, it doesn't necessarily mean that you must stop using the product. 
-    
-    It is essential to consider your individual sensitivity or allergy history. 
-    If you have experienced allergic reactions to cosmetic products in the past or suspect you might be allergic to specific ingredients, it's advisable to perform a patch test before using the product or consult a dermatologist.
-    """
-    )
-    st.image("skin_dang.ipeg")

@@ -53,5 +53,5 @@ with st.sidebar.beta_expander("Are there hypoallergenic cosmetic products availa
     st.image("cosm.jpeg")
 
 with st.sidebar.beta_expander("Can a product labeled as 'natural' or 'organic' cause allergic reactions?"):
-    st.write("Even natural and organic products can cause allergies, as some natural ingredients are allergens.")
+    st.write("Even natural and organic products can cause allergies, as some natural ingredients are allergens.🌾")
     

@@ -15,4 +15,4 @@ with c1:
 with c2:
     st.info('**GitHub: [@AlisaKaligina](https://github.com/AlisaKaliagina)**', icon="💻")
 with c3:
-    st.info('**E-mail: [steiger2212@gmail.com](mailto:steiger2212@gmail.com)**', icon="✍️")
+    st.info('**E-mail: [@Alisa_k](mailto:steiger2212@gmail.com)**', icon="✍️")

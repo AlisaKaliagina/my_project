@@ -2,14 +2,8 @@ import streamlit as st
 import pandas as pd
 
 st.title("AllergenNix")
-st.markdown("""
-    <style>
-        .green-text {
-            color: rgb(0, 255, 0); /* или использовать #00FF00 */
-        }
-    </style>
-    <p class="green-text">Free your skin from allergens with AllergenNix - your reliable tool for safe and healthy skin!</p>
-    """, unsafe_allow_html=True)
+
+st.markdown("""**:blue[Free your skin from allergens with AllergenNix - your reliable tool for safe and healthy skin!]**""")
 
 st.image('skin-jumbo-v2.gif')
 

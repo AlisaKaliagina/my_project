@@ -12,9 +12,11 @@ with st.sidebar.beta_expander("How can I determine my skin type?"):
     st.image("type_skin.jpg")
 
 with st.sidebar.beta_expander("How to enter the ingredients?"):
-    st.write("Be sure to use a comma when entering multiple ingredients. You can also refer to the information in the Allergens and Ingredients section to help you choose the right product.")
+    st.write("Be sure to use a comma when entering multiple ingredients. You can also refer to the information in the 'Allergens and Ingredients' section to help you choose the right product.")
     st.image("cosm.jpeg")
 
+with st.sidebar.beta_expander("Why are there 3 products in the output?"):
+    st.write()
 
 
 # Загружаем новые оптимизированные данные
@@ -52,7 +54,7 @@ skin_types = ['Dry', 'Oily', 'Normal', 'Combination', 'Sensitive']
 
 selected_category = st.selectbox('What kind of product are you searching for?', categories)
 selected_skin_type = st.selectbox('What is your skin type?', skin_types)
-exclude_ingr = st.text_input('What ingredients (allergens) do you want to exclude from the product? If you wanted to enter multiple ingredients, please enter them separated by commas')
+exclude_ingr = st.text_input('What ingredients (allergens) do you want to exclude from the product? (If you want to enter multiple ingredients, please enter them separated by commas)')
 
 if st.button('Find Products'):
     exclude_ingr_list = [a.strip() for a in exclude_ingr.split(",")]

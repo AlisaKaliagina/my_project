@@ -3,9 +3,9 @@ import streamlit as st
 st.subheader('Future Works')
 st.write(
     """
-    Thank you for using AllergenNix! We're constantly working to improve this app and provide you with the most accurate and relevant information on cosmetic products.
+    Thank you for using AllergenNix! I'm constantly working to improve this app and provide you with the most accurate and relevant information on cosmetic products.
 
-    If you have any questions, suggestions, or if you're interested in discussing potential collaborations, feel free to reach out to us:
+    If you have any questions, suggestions, or if you're interested in discussing potential collaborations, feel free to reach out to me:
     """
 )
 

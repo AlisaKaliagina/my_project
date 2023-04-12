@@ -2,8 +2,10 @@ import streamlit as st
 
 st.subheader('Analyzing allergens in cosmetics comes with several limitations and challenges, some of which are:')
 
+st.image('cosm_about.jpeg')
+
 st.write(
-    """**
+    """
 1. :blue[Incomplete ingredient lists:] Some manufacturers may not disclose the complete list of ingredients on the product label, making it difficult to identify potential allergens.
 
 
@@ -26,6 +28,6 @@ st.write(
 7. [Regulatory differences:] Different countries have different regulations regarding allergens and ingredient labeling, leading to inconsistencies in the information available to consumers.
 
 
-Despite these limitations, being aware of the most common allergens and carefully reading ingredient labels can help individuals with sensitive skin or a history of allergies make informed decisions when choosing cosmetic products.**
+Despite these limitations, being aware of the most common allergens and carefully reading ingredient labels can help individuals with sensitive skin or a history of allergies make informed decisions when choosing cosmetic products.
     """
 )

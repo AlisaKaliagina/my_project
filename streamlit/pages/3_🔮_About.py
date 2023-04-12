@@ -51,3 +51,35 @@ st.subheader(
 Despite these limitations, being aware of the most common allergens and carefully reading ingredient labels can help individuals with sensitive skin or a history of allergies make informed decisions when choosing cosmetic products.
     """
 )
+
+st.sidebar.title("What you should know ✅:")
+    
+with st.sidebar.beta_expander("Can a fragrance-free product contain allergens?"):
+    st.write("Fragrance-free means the absence of artificial fragrances, but the product may contain allergens.")
+   
+
+with st.sidebar.beta_expander("If my product contains one of the 26 allergens, does this mean that I should refuse the product?"):
+    st.write("""
+    If your cosmetic product contains one of the 26 allergens, it doesn't necessarily mean that you must stop using the product. 
+    
+    It is essential to consider your individual sensitivity or allergy history. 
+    If you have experienced allergic reactions to cosmetic products in the past or suspect you might be allergic to specific ingredients, it's advisable to perform a patch test before using the product or consult a dermatologist.
+    """
+    )
+    st.image("skin_dang.ipeg")
+
+with st.sidebar.beta_expander("What regulatory requirements exist for allergen labeling in cosmetic products?"):
+    st.write("Regulatory requirements for allergen labeling vary depending on the country.")
+    
+
+
+with st.sidebar.beta_expander("Does the price of a cosmetic product depend on the amount of allergens it contains?"):
+    
+    st.write(
+     """
+The price of a cosmetic product is not necessarily dependent on the number of allergens it contains.
+
+Other factors, such as the quality of ingredients, brand reputation, and packaging, can also affect the price of a cosmetic product. 
+
+However, some companies may use higher-quality, hypoallergenic ingredients and charge a premium for their products as a result. Ultimately, it's important to carefully read the ingredient labels and choose products that work for your skin type and personal preferences, regardless of the price."""
+)

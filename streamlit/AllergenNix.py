@@ -65,3 +65,4 @@ if st.button('Find Products'):
     else:
         st.write(filtered_products.to_html(index=False, border=0, justify="center"), unsafe_allow_html=True)
 
+

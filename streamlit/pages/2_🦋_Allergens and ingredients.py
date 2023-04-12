@@ -22,12 +22,16 @@ To prevent allergic reactions, it's important to read the labels and ingredient 
 )
 
 
+
+
+
 st.image('allergens-TITOLO.png')
+
 
 
 st.write(
     """
-Allergic reactions are highly individual, but we strongly recommend familiarizing yourself with the 26 recognized allergens to ensure the safety and well-being of your skin. These allergens, established by the European Union, are commonly found in cosmetic products and can trigger allergic reactions in sensitive individuals.
+Allergic reactions are highly individual, but we strongly recommend familiarizing yourself with **[the 26 recognized allergens](https://en.ecomundo.eu/blog/allergenes-cosmetique-conformite)** to ensure the safety and well-being of your skin. These allergens, established by the European Union, are commonly found in cosmetic products and can trigger allergic reactions in sensitive individuals.
 
 While not everyone may experience an adverse reaction to these allergens, it's crucial to be aware of them, especially if you have a history of allergies or sensitive skin. By knowing the allergens and understanding their potential effects, you can make informed decisions when choosing skincare products that are best suited for your needs.
 

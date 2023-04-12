@@ -1,12 +1,14 @@
 import streamlit as st
 
-st.subheader('Analyzing allergens in cosmetics comes with several limitations and challenges, some of which are:')
+st.title('Analyzing allergens in cosmetics comes with several limitations and challenges, some of which are:')
 
 st.image('cosm_about.jpeg')
 
+st.subheader('1. Incomplete ingredient lists')
+
 st.write(
     """
-1. Incomplete ingredient lists: Some manufacturers may not disclose the complete list of ingredients on the product label, making it difficult to identify potential allergens.
+Some manufacturers may not disclose the complete list of ingredients on the product label, making it difficult to identify potential allergens.
 
 
 2. Varying individual reactions: Allergic reactions are highly individual, and a substance that causes a reaction in one person may not cause the same reaction in another. This makes it challenging to determine whether a specific ingredient is an allergen for everyone.

@@ -11,7 +11,7 @@ Common allergens in cosmetics include fragrances, preservatives, and certain dye
 ❗ Some natural ingredients can also cause allergic reactions.❗
     """
 )
-st.image("clean_beauty.jpeg")
+st.image('clean_beauty.jpeg')
 
 st.write(
     """
@@ -20,3 +20,4 @@ To prevent allergic reactions, it's important to read the labels and ingredient 
 🚨 If you do experience an allergic reaction to a cosmetic product, stop using it immediately and seek medical attention if the symptoms are severe or persistent.🚨
     """
 )
+st.image('allergens-TITOLO.png')

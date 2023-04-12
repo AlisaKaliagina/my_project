@@ -21,7 +21,7 @@ with st.sidebar.beta_expander("Why are there 3 products in the output?"):
     st.write("We present you the top rated products in every price segment.")
 
 with st.sidebar.beta_expander("How do I perform an allergy test before using a new cosmetic product?"):
-    st.write("For an allergy test, apply a small amount of the product to a patch of skin and wait 24-48 hours..")
+    st.write("For an allergy test, apply a small amount of the product to a patch of skin and wait 24-48 hours.")
     st.image('patch.webp')
 # Загружаем новые оптимизированные данные
 DATA = ('products_new_df.csv')
@@ -58,7 +58,7 @@ skin_types = ['Dry', 'Oily', 'Normal', 'Combination', 'Sensitive']
 
 selected_category = st.selectbox('What kind of product are you searching for?', categories)
 selected_skin_type = st.selectbox('What is your skin type?', skin_types)
-exclude_ingr = st.text_input('What ingredients (allergens) do you want to exclude from the product? (If you want to enter multiple ingredients, please enter them separated by commas)')
+exclude_ingr = st.text_input('What ingredients (allergens) do you want to exclude from the product? ❗ (If you want to enter multiple ingredients, please enter them separated by commas)')
 
 if st.button('Find Products'):
     exclude_ingr_list = [a.strip() for a in exclude_ingr.split(",")]

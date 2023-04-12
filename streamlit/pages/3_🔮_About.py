@@ -67,8 +67,6 @@ with st.sidebar.beta_expander("If my product contains one of the 26 allergens, d
     """
     )
     st.image("skin_dang.ipeg")
-    
-
 
 with st.sidebar.beta_expander("What regulatory requirements exist for allergen labeling in cosmetic products?"):
     st.write("Regulatory requirements for allergen labeling vary depending on the country.")

@@ -51,3 +51,16 @@ st.subheader(
 Despite these limitations, being aware of the most common allergens and carefully reading ingredient labels can help individuals with sensitive skin or a history of allergies make informed decisions when choosing cosmetic products.
     """
 )
+
+st.sidebar.title("How to use?")
+
+with st.sidebar.beta_expander("How can I determine my skin type?"):
+    st.write("[**Here**](https://www.luminskin.com/blog/556068306980/how-to-determine-your-skin-type?utm_source=google&utm_medium=cpc&utm_campaign=16950478023&utm_term=&utm_content=pmax&gclid=CjwKCAjwitShBhA6EiwAq3RqA-LiB1Bt9Hbz6BfG8X8_D1WZ_u8JFopotWKduwAdW_aKtLbtyZN1hhoC85MQAvD_BwE) you can find some information.Keep in mind that skin type can change over time due to various factors, such as age, hormones, climate, or lifestyle. It's essential to reassess your skin type periodically and adjust your skincare routine accordingly. If you're unsure about your skin type or have concerns, it's always best to consult with a dermatologist")
+    st.image("type_skin.jpg")
+
+with st.sidebar.beta_expander("How to enter the ingredients?"):
+    st.write("Be sure to use a comma when entering multiple ingredients. You can also refer to the information in the 'Allergens and Ingredients' section to help you choose the right product.")
+    st.image("cosm.jpeg")
+
+with st.sidebar.beta_expander("Why are there 3 products in the output?"):
+    st.write("We present you the top rated products in every price segment.")

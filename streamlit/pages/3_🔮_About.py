@@ -3,23 +3,29 @@ import streamlit as st
 st.subheader('Analyzing allergens in cosmetics comes with several limitations and challenges, some of which are:')
 
 st.write(
-    """
-1.Incomplete ingredient lists: Some manufacturers may not disclose the complete list of ingredients on the product label, making it difficult to identify potential allergens.
+    """**
+1. :blue[Incomplete ingredient lists:] Some manufacturers may not disclose the complete list of ingredients on the product label, making it difficult to identify potential allergens.
 
-2.Varying individual reactions: Allergic reactions are highly individual, and a substance that causes a reaction in one person may not cause the same reaction in another. This makes it challenging to determine whether a specific ingredient is an allergen for everyone.
 
-3.Complex chemical compositions: Many cosmetic products have complex chemical compositions, making it difficult to pinpoint the exact allergen responsible for an adverse reaction.
+2. :green[Varying individual reactions:] Allergic reactions are highly individual, and a substance that causes a reaction in one person may not cause the same reaction in another. This makes it challenging to determine whether a specific ingredient is an allergen for everyone.
 
-4.Allergen thresholds: Some individuals may only experience an allergic reaction when exposed to a certain amount of an allergen. Identifying the exact threshold for each person can be challenging.
 
-5.Cross-reactivity: Some allergens may cause cross-reactivity, where an individual who is allergic to one substance may also experience a reaction to a chemically similar substance.
+3. :orange[Complex chemical compositions:] Many cosmetic products have complex chemical compositions, making it difficult to pinpoint the exact allergen responsible for an adverse reaction.
 
-6.Lack of standardized testing: There is no universally accepted method for testing cosmetic products for allergens, making it difficult to compare the allergenic potential of different products.
 
-7.Changes in product formulations: Manufacturers may change product formulations over time, introducing new allergens or increasing the concentration of existing allergens. This makes it difficult to maintain up-to-date information about the allergenic potential of specific products.
+4. :red[Allergen thresholds:] Some individuals may only experience an allergic reaction when exposed to a certain amount of an allergen. Identifying the exact threshold for each person can be challenging.
 
-8.Regulatory differences: Different countries have different regulations regarding allergens and ingredient labeling, leading to inconsistencies in the information available to consumers.
 
-Despite these limitations, being aware of the most common allergens and carefully reading ingredient labels can help individuals with sensitive skin or a history of allergies make informed decisions when choosing cosmetic products.
+
+5. :violet[Lack of standardized testing:] There is no universally accepted method for testing cosmetic products for allergens, making it difficult to compare the allergenic potential of different products.
+
+
+6. [Changes in product formulations:] Manufacturers may change product formulations over time, introducing new allergens or increasing the concentration of existing allergens. This makes it difficult to maintain up-to-date information about the allergenic potential of specific products.
+
+
+7. [Regulatory differences:] Different countries have different regulations regarding allergens and ingredient labeling, leading to inconsistencies in the information available to consumers.
+
+
+Despite these limitations, being aware of the most common allergens and carefully reading ingredient labels can help individuals with sensitive skin or a history of allergies make informed decisions when choosing cosmetic products.**
     """
 )

@@ -11,8 +11,8 @@ st.write(
 
 c1, c2, c3 = st.columns(3)
 with c1:
-    st.info('**Data Analyst: [@AlisaK](https://www.linkedin.com/in/alisa-kaliagina/)**', icon="💡")
+    st.info('**LinkedIn: [@AlisaK](https://www.linkedin.com/in/alisa-kaliagina/)**', icon="💡")
 with c2:
     st.info('**GitHub: [@AlisaKaligina](https://github.com/AlisaKaliagina)**', icon="💻")
 with c3:
-    st.info('**Data: [Cosmetics datasets](https://www.kaggle.com/datasets/kingabzpro/cosmetics-datasets)**', icon="🧠")
+    st.info('**E-mail: [steiger2212@gmail.com](mailto:steiger2212@gmail.com)**', icon="✍️")

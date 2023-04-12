@@ -46,12 +46,12 @@ with st.sidebar.beta_expander("What are the most common allergens in cosmetic pr
 
 with st.sidebar.beta_expander("What symptoms might indicate an allergic reaction to a cosmetic product?"):
     st.write("Allergy symptoms to cosmetics: itching, redness, swelling, rash, or skin irritation.")
-    st.image("patch.webp")
+    
 
 with st.sidebar.beta_expander("Are there hypoallergenic cosmetic products available?"):
     st.write("Hypoallergenic products exist, but they don't guarantee a complete absence of an allergic reaction.")
-    
+    st.image("patch.webp")
 
 with st.sidebar.beta_expander("Can a product labeled as 'natural' or 'organic' cause allergic reactions?"):
     st.write("Even natural and organic products can cause allergies, as some natural ingredients are allergens.")
-    st.image("INCI-2.pgn")
+    st.image("INCI-2.png")

@@ -56,7 +56,7 @@ st.sidebar.title("What you should know ✅:")
     
 with st.sidebar.beta_expander("Can a fragrance-free product contain allergens?"):
     st.write("Fragrance-free means the absence of artificial fragrances, but the product may contain allergens.")
-    st.image('patch.webp')
+    st.image('pic_2.webp')
 
 with st.sidebar.beta_expander("If my product contains one of the 26 allergens, does this mean that I should refuse the product?"):
     st.write("""
@@ -66,6 +66,7 @@ with st.sidebar.beta_expander("If my product contains one of the 26 allergens, d
     If you have experienced allergic reactions to cosmetic products in the past or suspect you might be allergic to specific ingredients, it's advisable to perform a patch test before using the product or consult a dermatologist.
     """
     )
+    st.image('patch.webp')
     
 
 with st.sidebar.beta_expander("What regulatory requirements exist for allergen labeling in cosmetic products?"):

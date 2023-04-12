@@ -4,8 +4,8 @@ import pandas as pd
 st.title("AllergenNix")
 st.markdown("""
     <style>
-        .red-text {
-            color: red;
+        .green-text {
+            color: rgb(0, 255, 0);
         }
     </style>
     <p class="red-text">Free your skin from allergens with AllergenNix - your reliable tool for safe and healthy skin!</p>

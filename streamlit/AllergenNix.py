@@ -22,7 +22,7 @@ with st.sidebar.beta_expander("Why are there 3 products in the output?"):
 
 with st.sidebar.beta_expander("How do I perform an allergy test before using a new cosmetic product?"):
     st.write("For an allergy test, apply a small amount of the product to a patch of skin and wait 24-48 hours..")
-
+    st.image('patch.webp')
 # Загружаем новые оптимизированные данные
 DATA = ('products_new_df.csv')
 @st.cache # для оптимизации работы приложения

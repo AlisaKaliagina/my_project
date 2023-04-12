@@ -22,7 +22,7 @@ To prevent allergic reactions, it's important to read the labels and ingredient 
 )
 
 
-
+st.subheader('Allergen Awareness')
 
 
 st.image('allergens-TITOLO.png')

@@ -16,7 +16,7 @@ with st.sidebar.beta_expander("How to enter the ingredients?"):
     st.image("cosm.jpeg")
 
 with st.sidebar.beta_expander("Why are there 3 products in the output?"):
-    st.write("u ")
+    st.write("We present you the top rated products in every price segment.")
 
 # Загружаем новые оптимизированные данные
 DATA = ('products_new_df.csv')

@@ -16,3 +16,5 @@ with c2:
     st.info('**GitHub: [@AlisaKaligina](https://github.com/AlisaKaliagina)**', icon="💻")
 with c3:
     st.info('**[e-mail](mailto:steiger2212@gmail.com)**', icon="✍️")
+
+st.image("200w.gif")
